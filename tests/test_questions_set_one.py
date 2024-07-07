@@ -1,6 +1,5 @@
 import pytest
-from questions import questions_set_one
-from questions import questions_set_one as questions
+from source.basics import questions_set_one as questions
 
 
 @pytest.mark.parametrize("number_one, number_two, expected, message", [

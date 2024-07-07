@@ -1,5 +1,5 @@
 import pytest
-import questions.list_problem_solving as list_questions
+import source.data_structure_list.list_problem_solving as list_questions
 
 @pytest.mark.parametrize('test_input, expected, message', [
 ([5, 1, 9], (1, 9), "expected results are 1, 9"),
