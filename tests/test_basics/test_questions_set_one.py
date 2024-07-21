@@ -1,12 +1,12 @@
 import pytest
-from source.basics import questions_set_one as questions
+from source.basics import problems_set_one as problems
 
 
 @pytest.mark.parametrize("number_one, number_two, expected, message", [
     (5, 5, 10, "the result should be 10")
 ])
 def test_add(number_one, number_two, expected, message):
-    result = questions.add(number_one, number_two)
+    result = problems.add(number_one, number_two)
     assert result == expected, message
 
 
@@ -16,7 +16,7 @@ def test_add(number_one, number_two, expected, message):
     (-3, 6, "Factorial of minus value should be the factorial of it's absolute value")
 ])
 def test_factorial(value, expected, message):
-    result = questions.factorial(value)
+    result = problems.factorial(value)
     assert result == expected, message
 
 
@@ -28,7 +28,7 @@ def test_factorial(value, expected, message):
     (10, [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144], "fibonacci sequence of 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144")
 ])
 def test_fibonacci_sequence(number, expected, message):
-    result = questions.fibonacci_sequence(number)
+    result = problems.fibonacci_sequence(number)
     assert result == expected, message
 
 
@@ -36,5 +36,5 @@ def test_fibonacci_sequence(number, expected, message):
     ("nana", "anan", "expected result should be anan")
 ])
 def test_reverse_string(str, expected, message):
-    result = questions.reverse_string(str)
+    result = problems.reverse_string(str)
     assert result == expected, message
