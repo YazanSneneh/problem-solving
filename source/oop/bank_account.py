@@ -16,10 +16,10 @@ class BankAccount:
         self.transactions.append(
             f"Deposited: {amount}. new balance: {self.balance} - Date: {get_date()}")
 
-        return f"Deposited: {amount}. new balance: {self.balance} - Date: {get_date()}"
+        return f"Deposited: {amount}"
 
     def withdraw(self, amount):
-        if self.balance < amount :
+        if self.balance <= amount :
             raise Exception("Withdraw Cannot be Completed, insufficient balance")
 
         if self.balance > 0:
@@ -27,7 +27,7 @@ class BankAccount:
             self.transactions.append(
                 f"Withdraw: {amount}. new balance: {self.balance} - Date: {get_date()}")
 
-        return f"Withdraw Complete. new balance: {self.balance} - Date: {get_date()}"
+        return f"Withdraw: {amount}, Balance: {self.balance}"
 
     def check_balance(self):
         return f"Your current balance: {self.balance}"
@@ -37,14 +37,3 @@ class BankAccount:
 
     def transaction_history(self):
         return "\n".join(self.transactions)
-
-
-account = BankAccount("Yazan A. Sneneh", 100)
-
-print(account.deposit(50))
-print(account.withdraw(40))
-print(account.withdraw(40))
-print(account.deposit(150))
-
-print("-======================================================================")
-print(account.transaction_history())
