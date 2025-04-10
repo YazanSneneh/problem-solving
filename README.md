@@ -8,7 +8,6 @@
 * in terminal run `pytest -v` or `pytest --v`
 
 # Table of Content
-
 | Challenge                  | Source Code                                 | White Board                                         |
 |----------------------------|---------------------------------------------|-----------------------------------------------------|
 | Missing Number In Sequence | [Code](./source/basics/problems_set_two.py) | [Visual](media/find_missing_number_in_sequence.png) |
