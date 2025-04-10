@@ -6,7 +6,7 @@
 * download repo.
 * download pytest
 * in terminal run `pytest -v` or `pytest --v`
-github test
+
 # Table of Content
 
 | Challenge                  | Source Code                                 | White Board                                         |
